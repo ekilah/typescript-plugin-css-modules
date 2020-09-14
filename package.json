@@ -27,7 +27,7 @@
   "scripts": {
     "build": "rm -rf ./lib && tsc",
     "lint": "eslint './src/**/*.{js,ts}' --max-warnings 0 && yarn prettier './**/*.{json,md,js,ts,yml}' -c",
-    "prepublishOnly": "yarn build",
+    "prepare": "yarn build",
     "test": "jest ./src"
   },
   "husky": {
